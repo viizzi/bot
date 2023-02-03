@@ -48,7 +48,7 @@ def delete_all_music_in_directory():
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     """Стартовое приветствие"""
-    photo = open('photo/i.png', 'rb')
+    photo = open('i.png', 'rb')
     chat_id = message.chat.id
     first_name = message.chat.first_name
     bot.send_photo(message.chat.id, photo, f"Привет {first_name}✌\n"
