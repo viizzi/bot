@@ -85,6 +85,5 @@ def get_files(message):
 
 
 delete_all_music_in_directory()
-bot.infinity_polling()
 bot.polling(none_stop=True)
 
